@@ -1,0 +1,24 @@
+{
+  "name": "mawared-api",
+  "version": "1.0.0",
+  "description": "api for mawared website",
+  "main": "server.js",
+  "scripts": {
+    "dev": "npx nodemon server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "mawared-api"
+  },
+  "keywords": [
+    "mawared"
+  ],
+  "author": "ibrahim albimani",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql2": "^2.1.0",
+    "sequelize": "^6.3.1"
+  }
+}
