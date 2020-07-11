@@ -3,7 +3,7 @@ const app = express();
 const bookRoute =require('./routes/bookRoute');
 const cateRoute =require('./routes/cateRoute');
 //routes
-app.use('/',bookRoute);
+// app.use('/',bookRoute);
 app.use('/book',bookRoute);
 app.use('/cate',cateRoute);
 
