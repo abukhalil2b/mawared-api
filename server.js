@@ -6,7 +6,7 @@ const cors = require('cors');
 
 
 //cors
-// app.use(cors());
+app.use(cors());
 
 //routes
 app.get('/', (req, res) => res.send('Hello World!'))
