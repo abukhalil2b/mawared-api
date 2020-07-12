@@ -1,9 +1,9 @@
 const { Sequelize } = require('sequelize');
 const db = require('../config/connection');
 
-module.exports = db.define('cates', {
+module.exports = db.define('Cate', {
     id: {
-        type: Sequelize.INTEGER, primaryKey: true, allowNull: false,autoIncrement: true,
+        type: Sequelize.INTEGER, primaryKey: true, allowNull: false,autoIncrement: true,unique: true
     },
     title: {
         type: Sequelize.STRING, allowNull: false
@@ -11,4 +11,4 @@ module.exports = db.define('cates', {
     description: {
         type: Sequelize.STRING, allowNull: true
     }
-}, { timestamps: false });
+}, { timestamps: false,tableName:'cates',underscored: true });

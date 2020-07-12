@@ -1,9 +1,9 @@
 const { Sequelize, DataTypes, Model } = require('sequelize');
 const db = require('../config/connection');
 
-module.exports = db.define('books', {
+module.exports = db.define('Book', {
     id: {
-        type: Sequelize.INTEGER, primaryKey: true, allowNull: false, autoIncrement: true
+        type: Sequelize.INTEGER, primaryKey: true, allowNull: false, autoIncrement: true,unique: true
     },
     title: {
         type: Sequelize.STRING
@@ -46,5 +46,5 @@ module.exports = db.define('books', {
     }
 
 }, {
-    timestamps: false
+    timestamps: false,tableName: 'books',underscored: true 
 })

@@ -3,7 +3,7 @@ const router = express.Router();
 const Book = require('../model/Book');
 
 //routers
-router.get('/', (req, res) => {
+router.get('/all', (req, res) => {
     Book.findAll()
         .then(books => {
             res.send(books)

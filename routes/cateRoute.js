@@ -3,7 +3,7 @@ const router = express.Router();
 const Cate = require('../model/Cate');
 
 
-router.get('/', (req, res) => {
+router.get('/all', (req, res) => {
     Cate.findAll()
         .then(cates => {
             res.send(cates)
