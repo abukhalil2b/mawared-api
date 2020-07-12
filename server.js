@@ -1,16 +1,15 @@
 const express = require('express');
 const app = express();
-const indexRoute =require('./routes/indexRoute');
 const bookRoute =require('./routes/bookRoute');
 const cateRoute =require('./routes/cateRoute');
 const cors = require('cors');
 
 
 //cors
-app.use(cors());
+// app.use(cors());
 
 //routes
-app.use('/',indexRoute);
+app.get('/', (req, res) => res.send('Hello World!'))
 app.use('/book/',bookRoute);
 app.use('/cate/',cateRoute);
 
