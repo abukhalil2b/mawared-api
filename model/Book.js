@@ -20,6 +20,9 @@ module.exports = db.define('Book', {
     juz: {
         type: Sequelize.STRING
     },
+    url: {
+        type: Sequelize.STRING,
+    },
     cover: {
         type: Sequelize.STRING,
     },
