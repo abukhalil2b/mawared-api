@@ -14,16 +14,16 @@ module.exports = db.define('Book', {
     description: {
         type: Sequelize.TEXT
     },
+    youtube: {
+        type: Sequelize.STRING
+    },
     edition: {
         type: Sequelize.STRING,
     },
     juz: {
         type: Sequelize.STRING
     },
-    url: {
-        type: Sequelize.STRING,
-    },
-    cover: {
+    cover_url: {
         type: Sequelize.STRING,
     },
     isbn: {
